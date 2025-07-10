@@ -293,12 +293,12 @@ Let's get started! 🚀
                     if key != "Skills_JSON"
                 )
                 matched_roles = match_resume_to_roles(resume_text, database)
-            selected_role = st.selectbox("🔍 Select matched role:", matched_roles or database["job_title"].dropna().unique().tolist())
+            selected_role = st.selectbox("🔍 Select matched role:", matched_roles or database["Transcript"].dropna().unique().tolist())
             if st.button("▶️ Start Interview"):
                 if selected_role:
                     st.session_state.role = selected_role
                     st.session_state.conversation = []
-                    st.session_state.transcripts = database[database["job_title"] == selected_role]["job_description_text"].dropna().tolist()
+                    st.session_state.transcripts = database[database["Transcript"] == selected_role]["Job Description"].dropna().tolist()
                     if st.session_state.transcripts:
                         st.session_state.current_question = st.session_state.transcripts.pop(0)
                         st.session_state.conversation.append(("Interviewer", st.session_state.current_question))
