@@ -10,7 +10,7 @@ import seaborn as sns
 from wordcloud import WordCloud
 from collections import Counter
 
-DB_PATH = "dataset_Ass.xlsx"
+DB_PATH = "Adarsh_Generated_Candidate_Data (2).xlsx"
 
 # ========== File Text Extractors ==========
 def extract_pdf_text(file):
