@@ -298,7 +298,7 @@ Let's get started! 🚀
                 if selected_role:
                     st.session_state.role = selected_role
                     st.session_state.conversation = []
-                    st.session_state.transcripts = database[database["Role"] == selected_role]["Job Description"].dropna().tolist()
+                    st.session_state.transcripts = database[database["Role"] == selected_role]["Transcript"].dropna().tolist()
                     if st.session_state.transcripts:
                         st.session_state.current_question = st.session_state.transcripts.pop(0)
                         st.session_state.conversation.append(("Interviewer", st.session_state.current_question))
