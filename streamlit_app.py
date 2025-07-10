@@ -246,7 +246,7 @@ Let's get started! 🚀
     
         st.markdown("""
         This app is designed to assist with **resume analysis** and **job market insights**  
-        as part of a recruitment system simulation by **CultureMonkey**.
+        as part of a recruitment system simulation.
     
         Built using **Python** and **Streamlit**, the system enables users to upload resumes,  
         analyze skills, and get matched to relevant job roles. It's a smart, AI-assisted tool  
