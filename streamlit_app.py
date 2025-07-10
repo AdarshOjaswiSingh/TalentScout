@@ -229,8 +229,6 @@ def main():
         st.write("""
         Welcome to the **TalentScout AI Hiring Assistant**! 👋
         This intelligent chatbot is designed to assist in the **initial screening of tech candidates** for technology-focused roles. As part of a fictional recruitment agency, *TalentScout*, this assistant helps gather essential candidate information and generate **relevant technical questions** based on their declared tech stack.
-
-        ### 🤖 How It Works:
 - The chatbot will greet you and collect your basic details (name, email, experience, etc.).
 - You'll then be asked to declare your **tech stack** (e.g., Python, React, AWS).
 - Based on your input, the assistant will generate **3–5 tailored technical questions** to assess your skills.
